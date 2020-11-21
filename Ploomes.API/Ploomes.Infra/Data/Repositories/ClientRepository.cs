@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Ploomes.Business.Interfaces.DbContext;
-using Ploomes.Business.Interfaces.Repositories;
-using Ploomes.Business.Models;
+using Ploomes.API.Business.Interfaces.DbContext;
+using Ploomes.API.Business.Interfaces.Repositories;
+using Ploomes.API.Business.Models;
 
-namespace Ploomes.Infra.Data.Repositories
+namespace Ploomes.API.Infra.Data.Repositories
 {
     public class ClientRepository : BaseRepository<ClientModel>, IClientRepository
     {

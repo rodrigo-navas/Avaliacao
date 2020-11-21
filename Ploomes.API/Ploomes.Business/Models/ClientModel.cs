@@ -1,8 +1,8 @@
 ﻿using Dapper.Contrib.Extensions;
-using Ploomes.Cross.Models;
+using Ploomes.API.Cross.Models;
 using System;
 
-namespace Ploomes.Business.Models
+namespace Ploomes.API.Business.Models
 {
     [Table("Client")]
     public class ClientModel : BaseModel

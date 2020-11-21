@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Ploomes.Cross.Query
+namespace Ploomes.API.Cross.Query
 {
     public class ResultQuery
     {
@@ -18,6 +18,11 @@ namespace Ploomes.Cross.Query
 
     public class ResultQuery<T> : ResultQuery
     {
+        public ResultQuery()
+        {
+
+        }
+
         public ResultQuery(T data)
         {
             this.Data = data;

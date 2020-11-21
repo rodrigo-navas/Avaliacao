@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ploomes.Business.Queries
+namespace Ploomes.API.Business.Queries
 {
     public class ClientQuery
     {

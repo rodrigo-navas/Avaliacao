@@ -1,6 +1,6 @@
-﻿using Ploomes.Business.Models;
+﻿using Ploomes.API.Business.Models;
 
-namespace Ploomes.Business.Interfaces.Repositories
+namespace Ploomes.API.Business.Interfaces.Repositories
 {
     public interface IClientRepository : IRepository<ClientModel>
     {

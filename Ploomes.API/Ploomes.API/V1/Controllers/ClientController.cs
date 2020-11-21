@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Ploomes.API.Controllers;
-using Ploomes.Business.Commands;
-using Ploomes.Business.Interfaces.Services;
-using Ploomes.Business.Queries;
-using Ploomes.Cross.Query;
+using Ploomes.API.Business.Commands;
+using Ploomes.API.Business.Interfaces.Services;
+using Ploomes.API.Business.Queries;
+using Ploomes.API.Cross.Query;
 using System;
 using System.Threading.Tasks;
 

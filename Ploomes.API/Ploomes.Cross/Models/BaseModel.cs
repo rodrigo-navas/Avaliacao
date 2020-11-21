@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ploomes.Cross.Models
+namespace Ploomes.API.Cross.Models
 {
     public abstract class BaseModel
     {

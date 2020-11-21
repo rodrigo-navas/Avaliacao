@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Ploomes.Business.Exceptions;
-using Ploomes.Cross.Query;
+using Ploomes.API.Business.Exceptions;
+using Ploomes.API.Cross.Query;
 using System;
 using System.Net;
 using System.Threading.Tasks;

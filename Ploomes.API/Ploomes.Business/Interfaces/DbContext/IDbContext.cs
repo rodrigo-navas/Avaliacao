@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 
-namespace Ploomes.Business.Interfaces.DbContext
+namespace Ploomes.API.Business.Interfaces.DbContext
 {
     public interface IDbContext : IDisposable
     {

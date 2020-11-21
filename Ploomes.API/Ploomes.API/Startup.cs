@@ -14,6 +14,7 @@ using Microsoft.OpenApi.Models;
 using Ploomes.API.Configurations;
 using Ploomes.API.Extensions;
 using Ploomes.API.Middlewares;
+using Ploomes.API.Business.Interfaces.Services;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using System;
@@ -83,7 +84,8 @@ namespace Ploomes.API
 
         public void Configure(IApplicationBuilder app,
             IWebHostEnvironment env,
-            IApiVersionDescriptionProvider provider)
+            IApiVersionDescriptionProvider provider,
+            IDBUpService dBUpService)
         {
             if (env.IsDevelopment())
             {
@@ -118,6 +120,8 @@ namespace Ploomes.API
             {
                 endpoints.MapControllers();
             });
+
+            DBUpConfiguration.Inicializacao(dBUpService, Configuration).Wait();
         }
     }
 }

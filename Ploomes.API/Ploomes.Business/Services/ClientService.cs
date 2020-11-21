@@ -1,14 +1,14 @@
-﻿using Ploomes.Business.Commands;
-using Ploomes.Business.Exceptions;
-using Ploomes.Business.Interfaces.Repositories;
-using Ploomes.Business.Interfaces.Services;
-using Ploomes.Business.Queries;
-using Ploomes.Cross.Query;
+﻿using Ploomes.API.Business.Commands;
+using Ploomes.API.Business.Exceptions;
+using Ploomes.API.Business.Interfaces.Repositories;
+using Ploomes.API.Business.Interfaces.Services;
+using Ploomes.API.Business.Queries;
+using Ploomes.API.Cross.Query;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Ploomes.Business.Services
+namespace Ploomes.API.Business.Services
 {
     public class ClientService : IClientService
     {

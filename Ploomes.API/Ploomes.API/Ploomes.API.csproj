@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="dbup" Version="4.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.2.0" />
     <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
@@ -21,9 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ploomes.Business\Ploomes.Business.csproj" />
-    <ProjectReference Include="..\Ploomes.Cross\Ploomes.Cross.csproj" />
-    <ProjectReference Include="..\Ploomes.Infra\Ploomes.Infra.csproj" />
+    <ProjectReference Include="..\Ploomes.Business\Ploomes.API.Business.csproj" />
+    <ProjectReference Include="..\Ploomes.Cross\Ploomes.API.Cross.csproj" />
+    <ProjectReference Include="..\Ploomes.Infra\Ploomes.API.Infra.csproj" />
   </ItemGroup>
 
 

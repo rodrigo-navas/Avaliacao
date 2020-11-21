@@ -1,15 +1,15 @@
 ﻿using Dapper;
 using Dapper.Contrib.Extensions;
 using Microsoft.Extensions.Configuration;
-using Ploomes.Business.Interfaces.DbContext;
-using Ploomes.Business.Interfaces.Repositories;
+using Ploomes.API.Business.Interfaces.DbContext;
+using Ploomes.API.Business.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ploomes.Infra.Data.Repositories
+namespace Ploomes.API.Infra.Data.Repositories
 {
     public class BaseRepository<TEntity> : AbstractRepository, IRepository<TEntity> where TEntity : class, new()
     {

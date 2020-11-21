@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Ploomes.Business.Interfaces.DbContext;
+using Ploomes.API.Business.Interfaces.DbContext;
 
-namespace Ploomes.Infra.Data.Repositories
+namespace Ploomes.API.Infra.Data.Repositories
 {
     public abstract class AbstractRepository
     {

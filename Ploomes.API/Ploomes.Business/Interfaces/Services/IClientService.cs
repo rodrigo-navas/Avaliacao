@@ -1,10 +1,10 @@
-﻿using Ploomes.Business.Commands;
-using Ploomes.Business.Queries;
-using Ploomes.Cross.Query;
+﻿using Ploomes.API.Business.Commands;
+using Ploomes.API.Business.Queries;
+using Ploomes.API.Cross.Query;
 using System;
 using System.Threading.Tasks;
 
-namespace Ploomes.Business.Interfaces.Services
+namespace Ploomes.API.Business.Interfaces.Services
 {
     public interface IClientService
     {

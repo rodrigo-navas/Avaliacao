@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Ploomes.Business.Interfaces.DbContext;
+using Ploomes.API.Business.Interfaces.DbContext;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Ploomes.Infra.Data.DbContext
+namespace Ploomes.API.Infra.Data.DbContext
 {
     public class DbContext : IDbContext
     {

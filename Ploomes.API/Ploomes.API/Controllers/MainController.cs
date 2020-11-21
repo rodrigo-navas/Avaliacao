@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Ploomes.Cross.Query;
+using Ploomes.API.Cross.Query;
 using System.Security.Claims;
 
 namespace Ploomes.API.Controllers

@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ploomes.Cross\Ploomes.Cross.csproj" />
+    <ProjectReference Include="..\Ploomes.Cross\Ploomes.API.Cross.csproj" />
   </ItemGroup>
 
 </Project>

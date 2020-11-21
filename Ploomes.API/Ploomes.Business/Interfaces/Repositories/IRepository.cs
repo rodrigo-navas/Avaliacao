@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
-namespace Ploomes.Business.Interfaces.Repositories
+namespace Ploomes.API.Business.Interfaces.Repositories
 {
     public interface IRepository<TEntity> where TEntity : class
     {

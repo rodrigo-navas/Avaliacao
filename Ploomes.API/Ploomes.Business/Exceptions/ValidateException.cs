@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ploomes.Business.Exceptions
+namespace Ploomes.API.Business.Exceptions
 {
     public class ValidateException : Exception
     {

@@ -1,7 +1,7 @@
-﻿using Ploomes.Business.Exceptions;
+﻿using Ploomes.API.Business.Exceptions;
 using System;
 
-namespace Ploomes.Business.Commands
+namespace Ploomes.API.Business.Commands
 {
     public class ClientCommand
     {
