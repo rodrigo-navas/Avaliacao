@@ -12,5 +12,5 @@ Camada responsável pelo controle de domínio (regra de negócio) do projeto.
 ### Ploomes.API.Cross ###
 Camada com responsabilidade transversal (cross-cutting), para auxílio em todos os projetos.
 
-### Ploomes.API.Infra###
+### Ploomes.API.Infra ###
 Camada responsável por implementar a parte de infraestrutura do projeto, com acesso ao Banco de Dados com Dapper, acesso à api's externas.  
