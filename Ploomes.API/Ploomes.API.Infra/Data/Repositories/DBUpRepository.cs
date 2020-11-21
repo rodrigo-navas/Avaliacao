@@ -53,7 +53,7 @@ namespace Ploomes.API.Infra.Data.Repositories
                 SqlDatabase(_context.Connection.ConnectionString).
                 WithScriptsEmbeddedInAssembly(Assembly.GetExecutingAssembly(), (string script) =>
                 {
-                    return !dicScriptsIgnorar.ContainsKey(script) && script.StartsWith("Ploomes.Api.Infra.Data.Scripts");
+                    return !dicScriptsIgnorar.ContainsKey(script) && script.StartsWith("Ploomes.API.Infra.Data.Scripts");
                 }).
                 WithExecutionTimeout(TimeSpan.Zero).
                 LogToConsole().

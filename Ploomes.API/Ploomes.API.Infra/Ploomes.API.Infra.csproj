@@ -23,7 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ploomes.Business\Ploomes.API.Business.csproj" />
+    <ProjectReference Include="..\Ploomes.API.Business\Ploomes.API.Business.csproj" />
+    <ProjectReference Include="..\Ploomes.API.Cross\Ploomes.API.Cross.csproj" />
   </ItemGroup>
 
 </Project>
