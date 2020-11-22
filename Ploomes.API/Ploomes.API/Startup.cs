@@ -1,27 +1,20 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.PlatformAbstractions;
-using Microsoft.OpenApi.Models;
+using Ploomes.API.Business.Interfaces.Services;
 using Ploomes.API.Configurations;
 using Ploomes.API.Extensions;
 using Ploomes.API.Middlewares;
-using Ploomes.API.Business.Interfaces.Services;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Ploomes.API
 {
@@ -53,26 +46,22 @@ namespace Ploomes.API
 
             services.ResolveDependencies();
 
+            services.AddSwaggerGenNewtonsoftSupport();
+
             services.AddSwaggerGen(c =>
             {
-                c.TagActionsBy(api =>
-                {
-                    if (api.GroupName != null)
-                        return new[] { api.GroupName };
-
-                    if (api.ActionDescriptor is ControllerActionDescriptor controllerActionDescriptor)
-                        return new[] { controllerActionDescriptor.ControllerName };
-
-                    throw new InvalidOperationException("Unable to determine tag for endpoint");
-
-                });
-
                 string caminhoAplicacao = PlatformServices.Default.Application.ApplicationBasePath;
                 string nomeAplicacao = PlatformServices.Default.Application.ApplicationName;
                 string caminhoXmlDoc = Path.Combine(caminhoAplicacao, $"{nomeAplicacao}.xml");
 
                 c.IncludeXmlComments(caminhoXmlDoc);
             });
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
+
 
             services.AddControllers().AddJsonOptions(o =>
             {

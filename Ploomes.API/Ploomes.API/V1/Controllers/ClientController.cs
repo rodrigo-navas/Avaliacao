@@ -11,7 +11,6 @@ namespace Ploomes.API.V1.Controllers
 {
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/client")]
-    //[ApiExplorerSettings(GroupName = "Client", IgnoreApi = false)]
     public class ClientController : MainController
     {
         IClientService _clientService;
