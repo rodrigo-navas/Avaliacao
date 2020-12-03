@@ -16,6 +16,7 @@ using Swashbuckle.AspNetCore.SwaggerUI;
 using System;
 using System.IO;
 
+
 namespace Avaliacao.API
 {
     public class Startup
