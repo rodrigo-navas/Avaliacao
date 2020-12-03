@@ -105,6 +105,8 @@ namespace Avaliacao.API
 
             app.UseMiddleware(typeof(ExceptionMiddleware));
 
+            app.UseCors();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
