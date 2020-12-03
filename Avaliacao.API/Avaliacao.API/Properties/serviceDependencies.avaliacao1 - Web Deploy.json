@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/avaliacao1/databases/Avaliacao",
+      "type": "mssql.azure",
+      "connectionId": "AvaliacaoConnection",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
